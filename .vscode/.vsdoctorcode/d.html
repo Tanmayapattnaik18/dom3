@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>Doctor Information Form</title>
+</head>
+<body>
+    <form id="doctorForm">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="text" id="doctorId" placeholder="Doctor ID" required>
+        <select id="specialization" required>
+            <option value="Dermatologist">Dermatologist</option>
+            <option value="ENT">ENT</option>
+            <option value="Dentist">Dentist</option>
+            <option value="Gynecologist">Gynecologist</option>
+            <option value="COVID">COVID</option>
+        </select>
+        <input type="number" id="experience" placeholder="Experience in years" required>
+        <input type="email" id="email" placeholder="Email address" required>
+        <input type="tel" id="mobile" placeholder="Mobile Number" required>
+        <input type="submit" value="Submit">
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Doctor ID</th>
+                <th>Specialization</th>
+                <th>Experience (Years)</th>
+                <th>Email Address</th>
+                <th>Mobile Number</th>
+                <th>Role</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="doctorList"></tbody>
+    </table>
+</body>
+</html>
